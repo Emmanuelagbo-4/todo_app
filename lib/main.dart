@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     helper.initializeDb().then(
       (result) => helper.getTodos().then((result)=>todos=result));
       DateTime today = DateTime.now();
-      Todo todo = Todo("Buy Oranges", today.toString(), 1, "And make sure to store them");
+      Todo todo = Todo("Buy Oranges", today.toString(), 2, "And make sure to store them");
       var result = helper.insertTodo(todo);
 
     return MaterialApp(
