@@ -6,7 +6,7 @@ class Todo{
   int _priority;
 
   Todo(this._title,this._date,this._priority, [this._description]);
-  Todo.withId(this._id, this._title,this._priority, this._date, [this._description]);
+  Todo.withId(this._id, this._title,this._date, this._priority, [this._description]);
 
   int get id => _id;
   String get title => _title;
