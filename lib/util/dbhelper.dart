@@ -49,7 +49,7 @@ class DbHelper {
     Future<List> getTodos() async {
       Database db = await this.db;
       var result = await db.rawQuery("SELECT * FROM $tblTodo order by $colPriority ASC");
-      return result;
+      return result; 
     }
 
     Future<int> getCount() async {
